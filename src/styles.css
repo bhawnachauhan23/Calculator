@@ -1,0 +1,107 @@
+body {
+  font-family: sans-serif;
+  background-color: rgb(2, 2, 36);
+}
+#app {
+  height: 550px;
+  width: 550px;
+  border-radius: 50rem;
+  background-color: rgb(168, 155, 150);
+}
+.op {
+  background-color: red;
+}
+.num {
+  background-color: gray;
+}
+#Calculator > div {
+  padding-top: 10px;
+  font-size: 2rem;
+  font-weight: bolder;
+  height: 50px;
+  border: 2px outset white;
+  border-radius: 0 10px;
+  color: white;
+}
+.item1 {
+  grid-area: display-area;
+  text-align: end;
+  font-weight: lighter;
+  background-color: rgb(43, 39, 39);
+  height: 65px !important;
+}
+.item2 {
+  grid-area: clear;
+}
+.item3 {
+  grid-area: extraOp;
+}
+.item4 {
+  grid-area: rem;
+}
+.item5 {
+  grid-area: div;
+}
+.item6 {
+  grid-area: seven;
+}
+.item7 {
+  grid-area: eight;
+}
+.item8 {
+  grid-area: nine;
+}
+.item9 {
+  grid-area: mul;
+}
+.item10 {
+  grid-area: four;
+}
+.item11 {
+  grid-area: five;
+}
+.item12 {
+  grid-area: six;
+}
+.item13 {
+  grid-area: subtrac;
+}
+.item14 {
+  grid-area: one;
+}
+.item15 {
+  grid-area: two;
+}
+.item16 {
+  grid-area: three;
+}
+.item17 {
+  grid-area: addtn;
+}
+.item18 {
+  grid-area: zeroo;
+}
+.item19 {
+  grid-area: deci;
+}
+.item20 {
+  grid-area: equal;
+}
+
+#Calculator {
+  height: 450px;
+  width: 350px;
+  background-color: black;
+  position: relative;
+  top: 10%;
+  display: grid;
+  grid-template-areas:
+    "display-area display-area display-area display-area "
+    "clear extraOp rem div"
+    "seven eight nine mul"
+    "four five six subtrac"
+    "one two three addtn"
+    "zeroo zeroo deci equal";
+  grid-gap: 10px;
+  padding: 20px 10px;
+}
